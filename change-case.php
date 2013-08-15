@@ -3,7 +3,7 @@
  * Plugin name: Change Case
  * Author: Michael Aronoff
  * Version: 1.1
- * Description: Adds in [uc] [lc] [tc] shortcodes to use changing text case in posts and pages.
+ * Description: Adds Change Case adds buttons to change text case in the WordPress visual editor.
  * */
 
 if ( !class_exists( "change_case" ) ):
