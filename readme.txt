@@ -35,3 +35,6 @@ The plugin can be used in the WordPress Visual Editor
 == Change Log ==
 = 1.0 =
 Initial Release
+
+= 1.1 =
+Fix Options Page

@@ -2,7 +2,7 @@
 /**
  * Plugin name: Change Case
  * Author: Michael Aronoff
- * Version: 1.0
+ * Version: 1.1
  * Description: Adds in [uc] [lc] [tc] shortcodes to use changing text case in posts and pages.
  * */
 
