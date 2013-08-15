@@ -99,7 +99,7 @@ if ( !class_exists( "change_case" ) ):
     if ( is_serialized( $current ) ) {$current = unserialize( $current );}
 ?>
     <div class='wrap'>
-      <div style='float:left; width:450px;'>
+      <div style='float:left;'>
         <h1>Change Case provided by Michael Aronoff of <a href="http://www.ciic.com" target="_blank">CIIC</a></h1>
         <p class="description">The options below are to choose which buttons are added to the tinyMCE editor.</p>
         <form method="post" action="options.php">
@@ -107,15 +107,15 @@ if ( !class_exists( "change_case" ) ):
           <table class="form-table">
             <tr valign="top">
               <th scope="row"><label for="CC_HR_OPTIONS['ac']">All Caps: </label></th>
-              <td><input type="checkbox" name="CC_HR_OPTIONS[cl]" id="CC_HR_OPTIONS['ac']" value='1' <?php if ( $current['ac']==1 ) {echo "checked='checked'";}?> /></td>
+              <td><input type="checkbox" name="CC_HR_OPTIONS[ac]" id="CC_HR_OPTIONS['ac']" value='1' <?php if ( $current['ac']==1 ) {echo "checked='checked'";}?> /></td>
             </tr>
             <tr valign="top">
               <th scope="row"><label for="CC_HR_OPTIONS['nc']">No Caps: </label></th>
-              <td><input type="checkbox" name="CC_HR_OPTIONS[cr]" id="CC_HR_OPTIONS['nc']" value='1' <?php if ( $current['nc']==1 ) {echo "checked='checked'";}?> /></td>
+              <td><input type="checkbox" name="CC_HR_OPTIONS[nc]" id="CC_HR_OPTIONS['nc']" value='1' <?php if ( $current['nc']==1 ) {echo "checked='checked'";}?> /></td>
             </tr>
             <tr valign="top">
               <th scope="row"><label for="CC_HR_OPTIONS['tc']">Title Case: </label></th>
-              <td><input type="checkbox" name="CC_HR_OPTIONS[cb]" id="CC_HR_OPTIONS['tc']" value='1' <?php if ( $current['tc']==1 ) {echo "checked='checked'";}?> /></td>
+              <td><input type="checkbox" name="CC_HR_OPTIONS[tc]" id="CC_HR_OPTIONS['tc']" value='1' <?php if ( $current['tc']==1 ) {echo "checked='checked'";}?> /></td>
             </tr>
           </table>
           <input type="hidden" name="action" value="update" />
