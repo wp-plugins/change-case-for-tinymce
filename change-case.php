@@ -2,7 +2,7 @@
 /**
  * Plugin name: Change Case
  * Author: Michael Aronoff
- * Version: 1.1
+ * Version: 1.1.1
  * Description: Adds Change Case adds buttons to change text case in the WordPress visual editor.
  * */
 
@@ -15,7 +15,7 @@ if ( !class_exists( "change_case" ) ):
 
   function __construct() {
     define( "CC_URL", WP_PLUGIN_URL.'/'.str_replace( basename( __FILE__ ), "", plugin_basename( __FILE__ ) ) );
-    define( "CC_PLUGIN_DIR", "change-case" );
+    define( "CC_PLUGIN_DIR", "change-case-for-tinymce" );
     define( "CC_PLUGIN_URL", get_bloginfo( 'url' )."/wp-content/plugins/" . CC_PLUGIN_DIR );
     add_shortcode( 'allcaps', array( __CLASS__, 'insert_all_caps' ) );
     add_shortcode( 'nocaps', array( __CLASS__, 'insert_no_caps' ) );

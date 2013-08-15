@@ -38,3 +38,6 @@ Initial Release
 
 = 1.1 =
 Fix Options Page
+
+= 1.1.1 =
+Fix File Path Issue
