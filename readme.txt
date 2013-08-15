@@ -25,7 +25,7 @@ Highlight the text to be changed. Click the Visual Ediotr button inside your pos
 
 1. Upload the plugin to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Add shortcode to your post or page where map should appear.
+3. Use buttons in WordPress TinyMCE Visual Editor
 
 == FAQ ==
 
