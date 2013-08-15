@@ -3,7 +3,7 @@ Contributors: MasterK
 Tags: text, case, TinyMCE, editor
 Requires at least: 3.3
 Tested up to: 3.6
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,3 +41,6 @@ Fix Options Page
 
 = 1.1.1 =
 Fix File Path Issue
+
+= 1.2 =
+Revise Icon Images
