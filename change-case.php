@@ -2,7 +2,7 @@
 /**
  * Plugin name: Change Case
  * Author: Michael Aronoff
- * Version: 1.2
+ * Version: 1.3
  * Description: Adds Change Case adds buttons to change text case in the WordPress visual editor.
  * */
 
@@ -17,9 +17,6 @@ if ( !class_exists( "change_case" ) ):
     define( "CC_URL", WP_PLUGIN_URL.'/'.str_replace( basename( __FILE__ ), "", plugin_basename( __FILE__ ) ) );
     define( "CC_PLUGIN_DIR", "change-case-for-tinymce" );
     define( "CC_PLUGIN_URL", get_bloginfo( 'url' )."/wp-content/plugins/" . CC_PLUGIN_DIR );
-    add_shortcode( 'allcaps', array( __CLASS__, 'insert_all_caps' ) );
-    add_shortcode( 'nocaps', array( __CLASS__, 'insert_no_caps' ) );
-    add_shortcode( 'titlecase', array( __CLASS__, 'insert_title_case' ) );
     register_activation_hook( __FILE__, array( __CLASS__, "register" ) );
     add_action( 'init', array( __CLASS__, 'add_button' ) );
     add_filter( 'tiny_mce_version', array( __CLASS__, 'refresh_mce' ) );
@@ -29,7 +26,7 @@ if ( !class_exists( "change_case" ) ):
   /* TINY MCE */
 
   function register() {
-    $values= array( "ac"=>1, "nc"=>1, "tc"=>1 );
+    $values= array( "ac"=>1, "nc"=>1, "tc"=>1, "sc"=>1 );
     if ( get_option( "CC_HR_OPTIONS" ) ) {
       $current = get_option( "CC_HR_OPTIONS" );
       if ( is_serialized( $current ) ) {
@@ -62,6 +59,9 @@ if ( !class_exists( "change_case" ) ):
     if ( $current['nc'] == 1 ) {
       array_push( $buttons,  "nocaps" );
     }
+	if ( $current['sc'] == 1 ) {
+      array_push( $buttons,  "sentencecase" );
+    }
     if ( $current['tc'] == 1 ) {
       array_push( $buttons,  "titlecase" );
     }
@@ -78,6 +78,9 @@ if ( !class_exists( "change_case" ) ):
     }
     if ( $current['nc'] == 1 ) {
       $plugin_array['nocaps'] = CC_PLUGIN_URL . '/cc.js';
+    }
+	if ( $current['sc'] == 1 ) {
+      $plugin_array['sentencecase'] = CC_PLUGIN_URL . '/cc.js';
     }
     if ( $current['tc'] == 1 ) {
       $plugin_array['titlecase'] = CC_PLUGIN_URL . '/cc.js';
@@ -112,6 +115,10 @@ if ( !class_exists( "change_case" ) ):
             <tr valign="top">
               <th scope="row"><label for="CC_HR_OPTIONS['nc']">No Caps: </label></th>
               <td><input type="checkbox" name="CC_HR_OPTIONS[nc]" id="CC_HR_OPTIONS['nc']" value='1' <?php if ( $current['nc']==1 ) {echo "checked='checked'";}?> /></td>
+            </tr>
+            <tr valign="top">
+              <th scope="row"><label for="CC_HR_OPTIONS['sc']">Sentence Case: </label></th>
+              <td><input type="checkbox" name="CC_HR_OPTIONS[sc]" id="CC_HR_OPTIONS['sc']" value='1' <?php if ( $current['sc']==1 ) {echo "checked='checked'";}?> /></td>
             </tr>
             <tr valign="top">
               <th scope="row"><label for="CC_HR_OPTIONS['tc']">Title Case: </label></th>

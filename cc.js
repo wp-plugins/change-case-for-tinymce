@@ -24,7 +24,7 @@
                 longname : "Change Case NC Code",
 				author : 'Michael Aronoff',
                 authorurl : 'http://www.ciic.com',
-                version : "1.0"
+                version : "1.3"
             };
         }
     });
@@ -50,10 +50,42 @@
         },
         getInfo : function() {
             return {
-                longname : "Change Case Hr Code",
+                longname : "Change Case AC Code",
 				author : 'Michael Aronoff',
                 authorurl : 'http://www.ciic.com',
-                version : "1.0"
+                version : "1.3"
+            };
+        }
+    });
+	tinymce.create('tinymce.plugins.sentencecase', {
+        init : function(ed, url) {
+            ed.addButton('sentencecase', {
+                title : 'Sentence Case',
+                image : url+'/sc.png',
+                onclick : function() {
+					String.prototype.sentenceCase = function() {
+    return this.toLowerCase().replace(/(^\s*\w|[\.\!\?]\s*\w)/g, function(c)
+	{
+		return c.toUpperCase()
+	});
+}
+            var sel = ed.dom.decode(ed.selection.getContent());
+            sel = sel.sentenceCase();
+            ed.selection.setContent(sel);
+            ed.save();
+            ed.isNotDirty = true;
+        }
+            });
+        },
+        createControl : function(n, cm) {
+            return null;
+        },
+        getInfo : function() {
+            return {
+                longname : "Change Case Sc Code",
+				author : 'Michael Aronoff',
+                authorurl : 'http://www.ciic.com',
+                version : "1.3"
             };
         }
     });
@@ -85,11 +117,12 @@
                 longname : "Change Case TC Code",
 				author : 'Michael Aronoff',
                 authorurl : 'http://www.ciic.com',
-                version : "1.0"
+                version : "1.3"
             };
         }
     });
 	tinymce.PluginManager.add('nocaps', tinymce.plugins.nocaps);
 	tinymce.PluginManager.add('allcaps', tinymce.plugins.allcaps);
+	tinymce.PluginManager.add('sentencecase', tinymce.plugins.sentencecase);
 	tinymce.PluginManager.add('titlecase', tinymce.plugins.titlecase);
 })();
