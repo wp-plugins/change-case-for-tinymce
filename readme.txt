@@ -19,7 +19,7 @@ There is an Options Page to enable or disable any of the buttons.
 
 == Usage ==
 
-Highlight the text to be changed. Click the Visual Ediotr button inside your post/page for the desired effect:
+Highlight the text to be changed. Click the Visual Editor button inside your post/page for the desired effect:
 
 * **UC** - Changes selected text to all Uppercase.
 * **lc** - Changes selected text to all lowercase.
@@ -37,7 +37,7 @@ Highlight the text to be changed. Click the Visual Ediotr button inside your pos
 = Q. Where can the plugin be used? =
 The plugin can be used in the WordPress Visual Editor
 
-= Q. Can i turn off some of the buttons? =
+= Q. Can I turn off some of the buttons? =
 Yes, there is a plugin options page that allows you to choose which buttons to display in the Visual Editor.
 
 == Change Log ==
