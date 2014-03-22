@@ -2,7 +2,7 @@
 Contributors: MasterK
 Tags: text, case, TinyMCE, editor
 Requires at least: 3.3
-Tested up to: 3.8
+Tested up to: 3.8.1
 Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -60,4 +60,4 @@ Add Sentence Case button
 Small bug fix
 
 = 1.5 =
-Update for WP 3.7
+Update for WP 3.8.1
