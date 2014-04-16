@@ -2,8 +2,8 @@
 Contributors: MasterK
 Tags: text, case, TinyMCE, editor
 Requires at least: 3.3
-Tested up to: 3.8.1
-Stable tag: 1.5
+Tested up to: 3.9
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,3 +61,6 @@ Small bug fix
 
 = 1.5 =
 Update for WP 3.8.1
+
+= 1.6 =
+Update for WP 3.9

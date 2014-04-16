@@ -2,7 +2,7 @@
 /**
  * Plugin name: Change Case
  * Author: Michael Aronoff
- * Version: 1.5
+ * Version: 1.6
  * Description: Adds Change Case adds buttons to change text case in the WordPress visual editor.
  * */
 
