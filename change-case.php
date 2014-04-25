@@ -74,16 +74,16 @@ if ( !class_exists( "change_case" ) ):
       $current = unserialize( $current );
     }
     if ( $current['ac'] == 1 ) {
-      $plugin_array['allcaps'] = CC_PLUGIN_URL . '/cc.js';
+      $plugin_array['allcaps'] = CC_PLUGIN_URL . '/js/cc.js';
     }
     if ( $current['nc'] == 1 ) {
-      $plugin_array['nocaps'] = CC_PLUGIN_URL . '/cc.js';
+      $plugin_array['nocaps'] = CC_PLUGIN_URL . '/js/cc.js';
     }
 	if ( $current['sc'] == 1 ) {
-      $plugin_array['sentencecase'] = CC_PLUGIN_URL . '/cc.js';
+      $plugin_array['sentencecase'] = CC_PLUGIN_URL . '/js/cc.js';
     }
     if ( $current['tc'] == 1 ) {
-      $plugin_array['titlecase'] = CC_PLUGIN_URL . '/cc.js';
+      $plugin_array['titlecase'] = CC_PLUGIN_URL . '/js/cc.js';
     }
     return $plugin_array;
   }

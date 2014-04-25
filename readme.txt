@@ -1,9 +1,9 @@
 === Change Text Case ===
-Contributors: MasterK
+Contributors: CIIC
 Tags: text, case, TinyMCE, editor
 Requires at least: 3.3
 Tested up to: 3.9
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ Change Case adds buttons to change text case in the WordPress visual editor.
 
 == Description ==
 
-This plugin solves one of my greatest annoyances. Quickly changing the case of selected text. Back when I built sites in Dreamweaver I had an extension that added this function so I could click a button and change the case of text but when I started developing for WordPress there was no similar plugin. So I wrote one!
+This plugin solves one of my greatest annoyances. Quickly changing the case of selected text. Clients often send text with all caps or no caps and clicking through a ton of text to fix the case is often tedious work. I created this simple but effective plugin to eliminate that chore.
 
 Based on a request I have added a fourth button to add Sentence Case as well. So if you have a large block of text with . ? or ! between sentences it will Cap only the first letter of each sentence.
 
