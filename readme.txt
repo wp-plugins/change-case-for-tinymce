@@ -1,9 +1,9 @@
 === Change Text Case ===
-Contributors: CIIC
+Contributors: Michael Aronoff
 Tags: text, case, TinyMCE, editor
 Requires at least: 3.3
-Tested up to: 4.2.3
-Stable tag: 1.8
+Tested up to: 4.3
+Stable tag: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,3 +67,6 @@ Update for WP 3.9
 
 = 1.8 =
 Update for WP 4.2
+
+= 1.9 =
+Update for WP 4.3
